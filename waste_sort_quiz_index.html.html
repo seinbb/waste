@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>분류가 어려운 쓰레기들, 당신은 얼마나 알고있나요?</title>
+<style>
+:root{--bg:#f5f8f4;--card:#fff;--ink:#152019;--muted:#657168;--green:#1f7a4c;--green2:#e8f5ee;--red:#a82a20;--red2:#fff1ef;--line:#dfe8e1}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;background:linear-gradient(#eff6ef,#f9fbf8);color:var(--ink)}
+.wrap{max-width:980px;margin:auto;padding:28px 20px 50px}.top{display:grid;grid-template-columns:1fr 140px;gap:20px;align-items:start}.title{font-size:clamp(32px,5vw,50px);line-height:1.08;letter-spacing:-.04em;margin:8px 0 12px}.sub{color:var(--muted);font-size:17px;margin:0}.qr{background:white;border:1px solid var(--line);border-radius:20px;padding:10px;text-align:center;box-shadow:0 10px 30px #0000000d}.qr img{width:116px;height:116px;display:block;margin:auto}.qr small{display:block;color:var(--muted);margin-top:7px}.quiz{display:grid;gap:18px;margin-top:26px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 24px #0000000a}.n{font-size:12px;font-weight:800;color:var(--green);letter-spacing:.08em}.q{font-size:22px;font-weight:800;margin:8px 0 16px}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.choice{position:relative}.choice input{position:absolute;opacity:0;pointer-events:none}.choice label{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;font-weight:700;background:#fff;cursor:pointer;user-select:none}.choice input:checked+label{border-color:#6aa785;background:var(--green2);color:#155b39}.answer{display:none;margin-top:13px;border-radius:13px;padding:13px 15px;line-height:1.5;background:var(--green2);color:#145c38}.card:has(input:checked) .answer{display:block}.note{margin-top:22px;color:var(--muted);font-size:12px;line-height:1.55;border-top:1px solid var(--line);padding-top:16px}@media(max-width:700px){.top{grid-template-columns:1fr 105px}.qr img{width:82px;height:82px}.choices{grid-template-columns:1fr}.card{padding:18px}.title{font-size:34px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="top">
+    <div><h1 class="title">분류가 어려운 쓰레기들,<br>당신은 얼마나 알고있나요?</h1><p class="sub">선지를 선택하면 바로 정답과 설명을 확인할 수 있습니다.</p></div>
+    <div class="qr"><img src="qr.png" alt="접속 QR 코드"><small>휴대폰으로 접속하기</small></div>
+  </section>
+  <section class="quiz">
+    <article class="card"><div class="n">QUESTION 1</div><div class="q">1. 수박 껍질은 어떤 종류의 쓰레기일까요?</div><div class="choices">
+      <div class="choice"><input id="q1a" name="q1" type="radio"><label for="q1a">일반 쓰레기</label></div><div class="choice"><input id="q1b" name="q1" type="radio"><label for="q1b">음식물 쓰레기</label></div><div class="choice"><input id="q1c" name="q1" type="radio"><label for="q1c">재활용 쓰레기</label></div></div><div class="answer"><b>정답: 음식물 쓰레기</b><br>수박 껍질은 잘게 썰고 수분을 줄여 음식물 쓰레기로 배출하는 것이 일반적입니다.</div></article>
+    <article class="card"><div class="n">QUESTION 2</div><div class="q">2. 고추장은 어떤 종류의 쓰레기일까요?</div><div class="choices">
+      <div class="choice"><input id="q2a" name="q2" type="radio"><label for="q2a">일반 쓰레기</label></div><div class="choice"><input id="q2b" name="q2" type="radio"><label for="q2b">음식물 쓰레기</label></div><div class="choice"><input id="q2c" name="q2" type="radio"><label for="q2c">재활용 쓰레기</label></div></div><div class="answer"><b>정답: 음식물 쓰레기</b><br>고추장 같은 장류는 음식물 쓰레기로 분류하되, 염분을 줄여 배출하도록 안내하는 지자체가 있습니다.</div></article>
+    <article class="card"><div class="n">QUESTION 3</div><div class="q">3. 즉석밥 플라스틱 용기는 어떤 종류의 쓰레기일까요?</div><div class="choices">
+      <div class="choice"><input id="q3a" name="q3" type="radio"><label for="q3a">일반 쓰레기</label></div><div class="choice"><input id="q3b" name="q3" type="radio"><label for="q3b">음식물 쓰레기</label></div><div class="choice"><input id="q3c" name="q3" type="radio"><label for="q3c">재활용 쓰레기</label></div></div><div class="answer"><b>정답: 일반 쓰레기</b><br>즉석밥 용기는 복합 재질 때문에 일반 분리배출 체계에서 재활용이 어려운 경우가 많습니다. 별도 회수 프로그램이 있다면 해당 경로를 이용할 수 있습니다.</div></article>
+    <article class="card"><div class="n">QUESTION 4</div><div class="q">4. 과일씨는 어떤 종류의 쓰레기일까요?</div><div class="choices">
+      <div class="choice"><input id="q4a" name="q4" type="radio"><label for="q4a">일반 쓰레기</label></div><div class="choice"><input id="q4b" name="q4" type="radio"><label for="q4b">음식물 쓰레기</label></div><div class="choice"><input id="q4c" name="q4" type="radio"><label for="q4c">재활용 쓰레기</label></div></div><div class="answer"><b>정답: 일반 쓰레기</b><br>복숭아·자두·감처럼 크고 딱딱한 과일씨는 음식물 처리 설비에 적합하지 않아 일반 쓰레기로 배출합니다.</div></article>
+  </section>
+  <div class="note">※ 분리배출 세부 기준은 지자체와 처리시설에 따라 달라질 수 있습니다. 과일씨는 특히 크고 단단한 씨를 기준으로 설명했습니다.</div>
+</main>
+</body></html>
